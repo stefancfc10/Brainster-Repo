@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.menu__bar {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.toggle-btn {
+    display: none;
+}
+.logo { 
+    font-size: 15px;
+    cursor: pointer;
+}
+.menu__bar ul {
+    list-style: none;
+    display: flex;
+}
+.menu__bar ul li {
+    padding: 10px 5px;
+    position: relative;
+}
+.menu__bar ul li a {
+    color: black;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+.menu__bar ul li a:hover {
+    color: black;
+}
+.dropdown__menu {
+    display: none;
+}
+.menu__bar ul li:hover .dropdown__menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:white;
+}
+.menu__bar ul li:hover .dropdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+.menu__bar ul li:hover .dropdown__menu ul li {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+}
+.section-1 {
+    background-color: rgb(246, 246, 246) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.template {
+    text-align: center;
+}
+.template h1 {
+ padding: 10px;
+ text-align: center;
+}
+.template p {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+button {
+margin: 5px;
+background-color:rgb(48, 47, 47) ;
+color: white;
+padding: 10px 15px;
+text-transform: uppercase;
+box-shadow:0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+border: none;
+cursor: pointer;
+}
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.red {
+    flex-basis: 20%;
+    background-color:rgb(255, 84, 68) ;
+    box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+    padding: 40px;
+    border-radius: 10px;
+}
+.red h1{
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+.red p {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.purple {
+    flex-basis: 20%;
+    background-color:rgb(170, 45, 182) ;
+    box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+    padding: 40px;
+    border-radius: 10px;
+}
+.purple h1{
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+.purple p {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.lightblue {
+    flex-basis: 20%;
+    background-color:rgb(30, 194, 164) ;
+    box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+    padding: 40px;
+    border-radius: 10px;
+}
+.lightblue h1{
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+.lightblue p {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.blue {
+    flex-basis: 20%;
+    background-color:rgb(39, 139, 224);
+    box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+    padding: 40px;
+    border-radius: 10px;
+}
+.blue h1{
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+.blue p {
+    text-transform: uppercase;
+     text-align: center;
+     color: white;
+}
+.section-3 {
+    background-color:rgb(246, 246, 246) ;
+   text-align: center;
+   box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+   
+   padding-top: 40px;
+}
+.box-img {
+    margin: 5px;
+
+}
+.box-img img{
+    width: 100%;
+}
+.box-img:hover {
+   border: 1px solid black; 
+   box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, .3) ;
+   cursor: pointer;
+}
+.btn {
+    background-color:rgba(230,225,225,255) ;
+    color: black;
+}
+.btn:hover {
+    background-color:rgb(45, 45, 45) ;
+    color: white;
+
+}
+.top-img {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bot-img {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-4 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section-4 h1{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.list{
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;  
+}
+.row{
+    flex-basis: 33.33%;
+    margin: 40px;
+    
+}
+.row ul{
+    list-style-type: none;
+    text-align: left;
+}
+.row ul li{
+    padding: 15px;
+}
+img {
+    padding-right: 5px;
+}
+.section-5{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background-color:rgba(70,70,70,255) ;
+}
+.section-5 h1 {
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+}
+.section-5 a{
+    text-decoration: none;
+}
+.section-5 i{
+    padding: 10px;
+    color: white;
+}
+.section-5 i:hover {
+    color:  rgb(45, 45, 45);
+}
+.footer{
+    width: 100%;
+    height: 60px;
+background-color: black;
+display: flex;
+justify-content: space-between;
+color: white;
+}
+.footer h3{
+    margin: 25px 15px ;
+    font-size: 13px;
+}
+
+@media (max-width : 425px) {
+    
+    .menu__bar {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .toggle-btn {
+        display: block;
+        justify-content: center;
+    }
+    
+    .menu__bar ul {
+        display: none;
+    }
+    .template {
+        width: 50%;
+    }
+    .section-2 {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+    }
+    .red {
+        margin-bottom: 10px;
+    }
+    .purple {
+        margin-bottom: 10px;
+    }
+    .blue {
+        margin-bottom: 10px;
+    }
+    .lightblue {
+        margin-bottom: 10px;
+    }
+   
+    .top-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bot-img {
+        display: block;   
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .hiden {
+    display: none;
+   }
+
+}
