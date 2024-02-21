@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img  {
+    width: 100%;
+}
+
+.bg {
+    background-color:#343a40 ;
+}
+
+.custom_bg {
+    background-color: #4900d5;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.banner {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Images/home.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
