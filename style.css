@@ -1,0 +1,12 @@
+#Progress {
+    width: 100%;
+    background-color: #ccc9c9;
+}
+
+#Bar {
+    width: 1%;
+    height: 30px;
+    background-color: #16ae16;
+    text-align: center;
+    
+  }
