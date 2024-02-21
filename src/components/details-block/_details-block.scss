@@ -1,0 +1,102 @@
+@use "../../css/abstracts/mixins" as mix;
+@use "../../css/abstracts/variables" as var;
+@use "sass:math";
+
+
+.detailsBlock {
+    @extend %section;
+    @extend %wrap;
+    display: flex;
+
+    .left_side {
+        flex-basis: 50%;
+
+    }
+
+    .left_side h3 {
+        color: var.$text-color-secondary;
+    }
+
+    .right_side {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right_side img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
+    
+
+}
+
+@media(max-width:426px) {
+
+    .detailsBlock {
+        flex-direction: column;
+        .left_side {
+            flex-basis: 100%;
+        }
+        .right_side {
+            flex-basis: 100%;
+        }
+        
+    } 
+   
+    
+}
+
+
+
+
+
+
+// .details {
+//     @extend %wrap;
+//     @extend %section;
+  
+//     display: flex;
+//     flex-direction: row;
+  
+//     .text {
+//       @extend %section;
+//       @extend %wrap;
+//       flex-basis: 60%;
+  
+//       .about {
+//         color: var.$text-color-secondary;
+//       }
+  
+//       @media (max-width: 425px) {
+//         flex-basis: 50%;
+//       }
+//     }
+  
+//     .picture {
+//       @extend %wrap;
+//       flex-basis: 40%;
+//       display: flex;
+//       align-items: center;
+  
+//       img {
+//         border: 1px solid #fff;
+//         border-radius: 50%;
+//       }
+//     }
+//   }
+  
+//   @media (max-width: 425px) {
+//     .details {
+//       padding: 0;
+//       display: flex;
+//       flex-direction: column;
+//     }
+  
+//     .picture {
+//       flex-basis: 50%;
+//       padding-bottom: var.$gutter-base;
+//     }
+//   }
