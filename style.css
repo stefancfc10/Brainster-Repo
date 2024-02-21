@@ -1,0 +1,69 @@
+
+body {
+    overflow-x: hidden;
+}
+
+
+img {
+    width: 100%;
+}
+
+.carousel-center {
+top: 50% !important;
+left: 50% !important;
+right: auto;
+bottom: auto;
+transform: translate(-50%, -50%);
+}
+
+.vh-80 {
+height: 80vh;
+object-fit: cover;
+}
+
+.card-1{
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./images/lights.jpg) no-repeat;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .card-2{
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(./images/media.jpg) no-repeat;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .custom-bg {
+    background-color: black;
+  }
+
+  .card-3{
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(./images/image1.jpg) no-repeat;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .custom-position {
+    top: -20% !important;
+    right: 10% !important;
+
+  }
+
+
+  .custom-w {
+    width: 150px;
+  }
+
+.active, .active:hover {
+    border-left: 3px solid white;
+}
+
+ 
+
+
