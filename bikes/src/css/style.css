@@ -1,0 +1,149 @@
+.b_color {
+  background-color: #e7e7e7;
+}
+
+.bg_white {
+    background-color: #fff;
+}
+
+.footer_color{
+  background-color: #f8f8f8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 10px;
+}
+
+nav div:nth-child(3) i:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+nav img {
+  padding: 5px;
+  width: 90px;
+  height: auto;
+}
+
+nav a {
+  margin-left: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #d3d3d3;
+  color: #ffa500;
+}
+
+
+.filters h5 {
+  font-weight: bold;
+}
+
+.filters p {
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.filters span {
+  float: right;
+  background-color: #d3d3d3;
+  color: #5c5c5c;
+}
+
+.filters .showAll {
+  color: #ffa500;
+  margin-top: 30px;
+}
+
+.filters p:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+.filters span:hover {
+  color: #000000;
+  background: #ffa500 !important;
+}
+
+.bikes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    flex-basis: 30%;
+}
+
+.card {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.card_body {
+    padding: 10px;
+    background-color: #ffa500;
+}
+
+.card:hover {
+  border-left: 2px solid #ffa500;
+  border-top: 2px solid #ffa500;
+  border-right: 2px solid #ffa500;
+  cursor: pointer;
+}
+
+img {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding-top: 4%;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+footer i {
+  padding: 15px;
+  color: #ffffff;
+  background-color: #ffa500;
+}
+
+footer i:hover {
+  color: #000000;
+  cursor: pointer;
+  background-color: #808080;
+}
+
+footer p:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+.active {
+  color: #ffa500;
+}
+
+.active span {
+  background-color: #ffa500;
+}
