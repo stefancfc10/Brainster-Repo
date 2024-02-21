@@ -1,0 +1,107 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use "sass:math";
+
+.full {
+    display: flex;
+  
+   
+}
+    .menu {
+
+        width: 20%;
+        height: 100vh;
+        background-color: var.$background-color-base;
+        position: fixed;
+
+        @include mix.tablet-styles {
+            width: 100%;
+            height: 60px;
+            display: inline-block;
+            background-color: var.$background-color-base;
+            justify-content: space-between;
+        }
+        
+    
+        .wrapper {
+            @extend %wrap;
+            display: flex;
+            flex-direction: column;
+
+            @include mix.tablet-styles {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 (var.$gutter-base);
+            }
+    
+    
+            .humburger-menu {
+    
+                display: none;
+    
+                @include mix.tablet-styles {
+                    display: block;
+                   
+                   
+                }
+            }
+    
+            }
+            
+            p {
+                position: absolute;
+                bottom: math.div(var.$gutter-base,3);
+                color: var.$text-color-secondary;
+
+                a {
+                   color: var.$text-color-base;
+                   text-decoration: none;
+                }
+    
+                @include mix.tablet-styles {
+                    display: none;
+                }
+            }
+    
+    
+            .logo {
+                @extend %section;
+                cursor:  pointer;
+            }
+            ul {
+    
+                list-style-type: none ;
+    
+                li {
+                    
+                    padding: (math.div(var.$gutter-base,3)) 0;
+    
+                     a {
+    
+                        text-decoration: none;
+                        color: var.$text-color-secondary;
+                        
+                       
+                     }
+    
+                     a:hover {
+                         text-decoration: underline;
+                        }
+                        
+                        @include mix.tablet-styles {
+                            display: none;
+                        }
+                        
+                    }
+    
+    
+            }
+        }
+
+
+
+
+
+
